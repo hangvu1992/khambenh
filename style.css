@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a:hover {
+    cursor: pointer;
+}
+a:link {
+    text-decoration: none;
+}      
+body {
+    font-family: Roboto,sans-serif;
+}
+.container {
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+h2 {
+    height: 46px;
+    line-height: 46px;
+    background-color: #009abb;
+    font-size: 22px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.clearfix::after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+/*=== header ===*/
+header {
+    background-color: #009abb;
+    margin-bottom: 15px;
+}
+header .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+}
+header h1 {
+    display: inline-block;
+    margin-top: 15px;
+} 
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0px 28px;
+
+}
+header ul li a:hover{
+    color: #23b7a4;
+    cursor: pointer;
+}
+ 
+header ul li a:first-child {
+    margin-left: 0px;
+}
+/* == banner == */
+#banner {
+    background-color: #3a454d;
+    background-size: cover;
+    background-image: url(images/banner/banner.jpg);
+    background-position: center center;
+    height: 430px;
+}
+/*== news == */
+.container #news > div {
+    float: left;
+    width: 50%;
+}
+.container #news > div h3 {
+
+}
+.container #news > div > div {
+    display: flex;
+    margin-bottom: 15px;
+}
+.container #news > div > div > img {
+    margin-right: 20px;
+}
+/* == posts == */
+#posts > div {
+    display: flex;
+    justify-content: space-between;
+}
+#posts > div div {
+    border: 2px solid #009abb;
+    border-radius: 5px;
+    padding : 10px 10px;
+    width: 32%;
+}
+#posts > div div button {
+    margin-top: 70px;
+    display: inline-block;
+    width: 180px;
+    height: 56px;
+    border: 2px solid #009abb;
+    border-radius: 100px;
+    background-color: #f0f4f5;
+    font-size: 30px;
+    color: #009abb;
+    background-image: url(images/button/button.png);
+    background-position-x: 122px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+#posts > div div button:hover {
+    background-color: #3a454d;
+    cursor: pointer;
+    border-color: #3a454d;
+}
+/*== services == */
+#services > div {
+    display: flex;
+    justify-content: space-between;
+}
+#services > div div {
+    width: 19%;
+    background-color: #007c92;
+    height: 163px;
+
+}
+#services > div div a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*=== the-feedbacks ===*/
+#the-feedbacks > div {
+    display: flex;
+    justify-content: space-between;
+}
+#the-feedbacks > div > div {
+    border: 2px solid #009abb;
+    width: 32.5%;
+    padding: 10px 10px 80px 10px;
+    border-radius: 20px;
+}
+#the-feedbacks > div > div > div {
+    display: flex;
+}
+#the-feedbacks > div > div div img {
+    margin-right: 20px;
+}
+#the-feedbacks > div > div div a {
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+#the-feedbacks > div > div p {
+    margin: 20px 0px 0px 0px;
+}
+
+/*=== free-Consultation === */ 
+
+#free-Consultation form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#free-Consultation form > div {
+    width: 49%;
+    margin-bottom: 50px;
+}
+#free-Consultation form div:last-child {
+    width: 100%;
+    text-align: center;
+}
+#free-Consultation form div > input {
+    border: 2px solid #009abb;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 43px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#free-Consultation form div input:first-child {
+    margin-top: 10px;
+}
+#free-Consultation form div input:last-child {
+    margin-bottom: 0px;
+} 
+#free-Consultation form div textarea {
+    width: 100%;
+    border: 2px solid #009abb;
+    border-radius: 20px;
+    padding: 20px 20px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+#free-Consultation form div > div  {
+    position: relative;
+    margin-bottom: 30px;
+}
+#free-Consultation form div > div > span {
+    position: absolute;
+    font-size: 16px;
+    padding: 0px 11px;
+    background: #ffffffff;
+    top: -20%;
+    left: 11%;
+    color: #009abb;
+    font-weight: bold;
+    font-size: 18px;
+}
+#free-Consultation form div > div:last-child > span {
+    top: 1%;
+}
+#free-Consultation input:focus {
+    border-color: #009abb;
+}
+#free-Consultation form button {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: 2px solid  #41c7e4;
+    background-color: #41c7e4;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+#free-Consultation form button:hover {
+    cursor: pointer;
+    background-color: #3a454d;
+    border-color: #3a454d;
+}
+/*=== footer === */
+footer {
+    background-color: #009abb;
+}
+footer p, a, li {
+    color: #ffffff;
+    margin-top: 10px;
+}
+footer > div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+footer > div.container div {
+    width: 29%;
+}
+footer > div.container h3 {
+    color: #ffffff;
+}
+footer > div.container div:first-child > a {
+    display: block;
+    color: #ffffff;
+}
+footer > p {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #09425a;
+}
+footer div#contact {
+    position: relative;
+}
+footer div#contact ul {
+    display: inline-block;
+    position: absolute;
+    right: 45%;
+    top: 25%;
+    margin-top: -25px;
+}
+footer div#contact li {
+    display: inline-block;
+}
+footer div#contact ul li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #009abb;
+    text-indent: -1000000px;
+    background-repeat: no-repeat;
+    background-position : center center;
+}
+footer div#contact ul li:first-child a {
+    background-image: url(images/socials/twitter.png);
+}
+footer div#contact ul li:nth-child(2) a {
+    background-image: url(images/socials/facebook.png);
+}
+footer div#contact ul li:nth-child(3) a {
+    background-image: url(images/socials/instagram.png);
+}
+
+
